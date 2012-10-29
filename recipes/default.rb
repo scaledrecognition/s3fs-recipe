@@ -6,6 +6,7 @@ end
 remote_file "/tmp/fuse-#{ node[:fuse][:version] }.tar.gz" do
   source "http://downloads.sourceforge.net/project/fuse/fuse-2.X/#{ node[:fuse][:version] }/fuse-#{ node[:fuse][:version] }.tar.gz"
   mode 0644
+  not_if { File.exists?("/usr/bin/fusermount") }
 end
 
 bash "install fuse" do
@@ -25,6 +26,7 @@ end
 remote_file "/tmp/s3fs-#{ node[:s3fs][:version] }.tar.gz" do
   source "http://s3fs.googlecode.com/files/s3fs-#{ node[:s3fs][:version] }.tar.gz"
   mode 0644
+  not_if { File.exists?("/usr/bin/s3fs") }
 end
 
 bash "install s3fs" do
