@@ -10,3 +10,4 @@ default["s3fs"]["aws_secret_key"] = ""
 default["s3fs"]["mount_root"] = "/mnt"
 default["s3fs"]["mount_buckets"] = []
 default["s3fs"]["mount_user"] = "root"
+default["s3fs"]["mount_options"] = "allow_other,nodev,nosuid,noatime"
