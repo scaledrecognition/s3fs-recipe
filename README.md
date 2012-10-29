@@ -7,7 +7,7 @@ The purpose of this recipe is to create an s3fs driver for multiple s3 buckets, 
 
 To build / install FUSE and s3fs, simply include the default s3fs recipe.
 
-To mount S3 buckets using s3fs, override the following attributes:
+To mount S3 buckets using s3fs, include the s3fs::mounts recipe and override the following attributes:
 
     :s3fs => {
         :aws_access_key = "AWS_ACCESS_KEY",
