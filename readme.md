@@ -1,15 +1,29 @@
-# s3fs recipe
+# Amazon s3fs Recipe
 
-chef recipe for s3fs
+The purpose of this recipe is to create a s3fs driver for one of your amazon s3 buckets.
 
-# Home
 
-[http://community.opscode.com/cookbooks/s3fs](http://community.opscode.com/cookbooks/s3fs)
+## Setup
 
-# License
+To build / install FUSE and s3fs, simply include the default s3fs recipe.
 
-see LICENSE
+To mount S3 buckets using s3fs, override the following attributes:
 
-# Contributions
+    :s3fs => {
+        :aws_access_key = "AWS_ACCESS_KEY",
+        :aws_secret_key = "AWS_SECRET_KEY",
+        :mount_root = "/mnt", # defaults to /mnt
+        :mount_buckets = [ "bucket1", "bucket2" ]
+    }
 
-Contributions Welcome
+## What does it do?
+
+It will install and configure FUSE and s3fs on your machine.  The example above will mount 2 s3 buckets, "bucket1" and "bucket2", to /mnt/bucket1 and /mnt/bucket2
+
+## Support
+
+If you have any problems or change requests to this recipe please contact pat.leckey@canvaspop.com
+
+## Credits
+
+This recipe is base on Tom Wilson's <tom@jackhq.com> port of the s3fs recipe by Jack Russell Software <team@jackrussellsoftware.com>
