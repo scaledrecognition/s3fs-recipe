@@ -1,6 +1,6 @@
 # Amazon s3fs Recipe
 
-The purpose of this recipe is to create a s3fs driver for one of your amazon s3 buckets.
+The purpose of this recipe is to create an s3fs driver for multiple s3 buckets, that can be changed or managed individually per role and environment.
 
 
 ## Setup
