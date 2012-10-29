@@ -26,4 +26,4 @@ If you have any problems or change requests to this recipe please contact pat.le
 
 ## Credits
 
-This recipe is base on Tom Wilson's <tom@jackhq.com> port of the s3fs recipe by Jack Russell Software <team@jackrussellsoftware.com>
+This recipe is based on Tom Wilson's <tom@jackhq.com> port of the s3fs recipe by Jack Russell Software <team@jackrussellsoftware.com>
