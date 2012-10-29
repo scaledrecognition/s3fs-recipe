@@ -10,10 +10,10 @@ To build / install FUSE and s3fs, simply include the default s3fs recipe.
 To mount S3 buckets using s3fs, include the s3fs::mounts recipe and override the following attributes:
 
     :s3fs => {
-        :aws_access_key = "AWS_ACCESS_KEY",
-        :aws_secret_key = "AWS_SECRET_KEY",
-        :mount_root = "/mnt", # defaults to /mnt
-        :mount_buckets = [ "bucket1", "bucket2" ]
+        :aws_access_key => "AWS_ACCESS_KEY",
+        :aws_secret_key => "AWS_SECRET_KEY",
+        :mount_root => "/mnt", # defaults to /mnt
+        :mount_buckets => [ "bucket1", "bucket2" ]
     }
 
 ## What does it do?
