@@ -1,5 +1,5 @@
 # installation versions
-default["fuse"]["version"] = "2.8.7"
+default["fuse"]["version"] = "2.9.2"
 default["s3fs"]["version"] = "1.61"
 
 # AWS information
